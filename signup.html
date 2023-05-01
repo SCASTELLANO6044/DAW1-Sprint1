@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/singup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar" id="nav-var">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+                <li><a href="./activities.html">Actividades</a></li>
+                <li><a href="#">Registrarse</a></li>
+            </ul>
+        </nav> 
+    </div>
+    <div class="index-body">
+        <div class="title">
+            <h2>Registro</h2>
+        </div>
+        <div class="form form--signup">
+            <form>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <input type="password" id="contraseña" name="contraseña" placeholder="contraseña" required>
+                <input type="password" id="conf_contraseña" name="conf_contraseña" placeholder="confirmar contraseña" required>
+                <input type="number" id="edad" name="edad" min="18" max="120" placeholder="edad">
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero">
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <input type="tel" id="telefono" name="telefono" placeholder="teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <textarea id="direccion" name="direccion" placeholder="dirección" rows="3"></textarea>
+                <label for="subscription-type">Tipo de subscripción</label>
+                <select id="subscription-type" name="subscription">
+                  <option value="monthly">Mensual</option>
+                  <option value="trimestral">Trimestral</option>
+                  <option value="semestral">Semestral</option>
+                </select>
+                <button class="button">Registrarse</button>
+              </form>
+        </div>
+        <div class="form form--login">
+            <form autocomplete="off">
+              <input type="text" required placeholder="email">
+              <input type="password" required placeholder="contraseña">
+              <button class="button">Iniciar sesión</button>
+            </form>
+          </div>
+    </div>
+</body>
+</html>
